@@ -1,0 +1,280 @@
+[
+  {
+    "name": "Yeezy Boost 350",
+    "brand": "Adidas",
+    "price": 10000,
+    "size": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb",
+    "stock": 5,
+    "description": "Clean everyday kicks with a bold streetwear vibe."
+  },
+  {
+    "name": "Chuck 70",
+    "brand": "Converse",
+    "price": 15000,
+    "size": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1607522370275-f14206abe5d3",
+    "stock": 5,
+    "description": "Classic Converse style with a timeless streetwear look."
+  },
+  {
+    "name": "Forum Low",
+    "brand": "Adidas",
+    "price": 9500,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3",
+    "stock": 14,
+    "description": "Classic low-top sneakers with a clean retro streetwear look."
+  },
+  {
+    "name": "Run Star Hike",
+    "brand": "Converse",
+    "price": 10989,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772",
+    "stock": 9,
+    "description": "Bold platform sneakers with a rugged modern streetwear design"
+  },
+  {
+    "name": "574 Core",
+    "brand": "New Balance",
+    "price": 8500,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Lifestyle",
+    "imageUrl": "https://images.unsplash.com/photo-1539185441755-769473a23570",
+    "stock": 18,
+    "description": "Classic lifestyle sneakers designed for everyday comfort."
+  },
+  {
+    "name": "Suede Classic",
+    "brand": "Puma",
+    "price": 7500,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Lifestyle",
+    "imageUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    "stock": 16,
+    "description": "Iconic suede sneakers with a timeless streetwear-inspired design."
+  },
+  {
+    "name": "Air Force 1 Low",
+    "brand": "Nike",
+    "price": 13500,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1556906781-9a412961c28c",
+    "stock": 13,
+    "description": "Clean low-top sneakers with an iconic everyday streetwear style."
+  },
+  {
+    "name": "Ultraboost Light",
+    "brand": "Adidas",
+    "price": 14000,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Running",
+    "imageUrl": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2",
+    "stock": 10,
+    "description": "Lightweight running shoes with responsive cushioning and a modern athletic design"
+  },
+  {
+    "name": "Dunk Low Panda",
+    "brand": "Nike",
+    "price": 12491,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1552346154-21d32810aba3",
+    "stock": 15,
+    "description": "Classic black and white sneaker with a clean streetwear look."
+  },
+  {
+    "name": "Air Max 90",
+    "brand": "Nike",
+    "price": 18000,
+    "size": [
+      "8",
+      "9",
+      "10"
+    ],
+    "category": "sneakers",
+    "imageUrl": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+    "stock": 5,
+    "description": "Classic Nike Air Max sneaker."
+  },
+  {
+    "name": "Air Jordan 1 High OG 'Chicago'",
+    "brand": "Nike",
+    "price": 24999,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Basketball",
+    "imageUrl": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111",
+    "stock": 4,
+    "description": "The legendary silhouette that changed sneaker history. Premium leather with classic Chicago colorblocking."
+  },
+  {
+    "name": "Air Jordan 4 Retro 'University Blue'",
+    "brand": "Nike",
+    "price": 26500,
+    "size": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Basketball",
+    "imageUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
+    "stock": 3,
+    "description": "Premium suede upper in vibrant University Blue with signature speckled cement grey detailing."
+  },
+  {
+    "name": "New Balance 550 'Vintage White'",
+    "brand": "New Balance",
+    "price": 11999,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "category": "Lifestyle",
+    "imageUrl": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2",
+    "stock": 6,
+    "description": "Tribute to 1989 pro basketball players. Simple, clean, retro aesthetic with perforated leather."
+  },
+  {
+    "name": "Adidas Samba OG 'White & Black'",
+    "brand": "Adidas",
+    "price": 9999,
+    "size": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "category": "Classics",
+    "imageUrl": "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b",
+    "stock": 8,
+    "description": "The timeless football trainer turned streetwear essential. Soft leather with suede T-toe and gum sole."
+  },
+  {
+    "name": "Puma RS-X 'Retro Reinvention'",
+    "brand": "Puma",
+    "price": 8999,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "category": "Running",
+    "imageUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+    "stock": 5,
+    "description": "Extreme retro aesthetics with bulky silhouette, mesh underlays, and Running System cushioning."
+  },
+  {
+    "name": "Nike SB Dunk Low 'What The'",
+    "brand": "Nike",
+    "price": 31999,
+    "size": [
+      "8",
+      "9",
+      "10"
+    ],
+    "category": "Skateboarding",
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
+    "stock": 2,
+    "description": "Grail-level collector drop combining legendary Dunks into one masterpiece. Maximum padding and grip."
+  },
+  {
+    "name": "Asics Gel-Kayano 14 'Silver Cream'",
+    "brand": "Asics",
+    "price": 14500,
+    "size": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Running",
+    "imageUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
+    "stock": 4,
+    "description": "Y2K running champion revived with signature GEL technology and metallic cybernetic overlays."
+  },
+  {
+    "name": "Converse Weapon CX 'High-Voltage'",
+    "brand": "Converse",
+    "price": 12499,
+    "size": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "category": "Basketball",
+    "imageUrl": "https://images.unsplash.com/photo-1618677831708-0e7fda3148b4",
+    "stock": 5,
+    "description": "The 80s hardwood icon remastered with modern CX foam midsole and exaggerated collar proportions."
+  }
+]
