@@ -51,7 +51,8 @@ const frontendDistPath = path.join(__dirname, '../frontend/dist');
 
 if (fs.existsSync(frontendDistPath)) {
   app.use(express.static(frontendDistPath));
-  app.get('*', (req, res) => {
+  // Catch-all route to serve index.html for Single Page Application (compatible with Express v5)
+  app.use((req, res) => {
     res.sendFile(path.join(frontendDistPath, 'index.html'));
   });
 } else {
