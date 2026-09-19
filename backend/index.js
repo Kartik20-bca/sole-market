@@ -14,30 +14,50 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/solemarket';
+const MONGODB_URI = process.env.MONGODB_URI;
 
-mongoose.connect(MONGODB_URI)
-  .then(async () => {
-    console.log('MongoDB connected successfully to:', MONGODB_URI.includes('@') ? 'MongoDB Atlas Cloud' : 'Local MongoDB');
-    // Auto-seed if database is empty
-    try {
-      const count = await Product.countDocuments();
-      if (count === 0) {
-        const seedPath = path.join(__dirname, 'seeds', 'products.json');
-        if (fs.existsSync(seedPath)) {
-          const seedData = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
-          if (Array.isArray(seedData) && seedData.length > 0) {
-            console.log('Catalog empty. Auto-seeding initial sneaker grails...');
-            await Product.insertMany(seedData);
-            console.log(`Auto-seeded ${seedData.length} products successfully!`);
+if (MONGODB_URI) {
+  console.log('Connecting to MongoDB Atlas Cloud...');
+  mongoose.connect(MONGODB_URI, {
+    serverSelectionTimeoutMS: 5000,
+  })
+    .then(async () => {
+      console.log('MongoDB connected successfully to:', MONGODB_URI.includes('@') ? 'MongoDB Atlas Cloud' : 'MongoDB');
+      // Auto-seed if database is empty
+      try {
+        const count = await Product.countDocuments();
+        if (count === 0) {
+          const seedPath = path.join(__dirname, 'seeds', 'products.json');
+          if (fs.existsSync(seedPath)) {
+            const seedData = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
+            if (Array.isArray(seedData) && seedData.length > 0) {
+              console.log('Catalog empty. Auto-seeding initial sneaker grails...');
+              await Product.insertMany(seedData);
+              console.log(`Auto-seeded ${seedData.length} products successfully!`);
+            }
           }
         }
+      } catch (seedErr) {
+        console.error('Seed verification note:', seedErr.message);
       }
-    } catch (seedErr) {
-      console.error('Seed verification note:', seedErr.message);
-    }
+    })
+    .catch((err) => {
+      console.warn('MongoDB connection note:', err.message);
+      console.log('Running seamlessly with in-memory Sneaker Vault catalog!');
+    });
+} else if (process.env.NODE_ENV === 'production' || process.env.RENDER) {
+  console.log('Notice: MONGODB_URI environment variable not configured in production.');
+  console.log('Running seamlessly with resilient built-in Sneaker Vault catalog (18 grails ready)!');
+} else {
+  // Local development fallback
+  mongoose.connect('mongodb://localhost:27017/solemarket', {
+    serverSelectionTimeoutMS: 2500,
   })
-  .catch((err) => console.log('MongoDB connection warning:', err.message));
+    .then(() => console.log('MongoDB connected locally'))
+    .catch((err) => {
+      console.log('Local MongoDB not running. Running with built-in catalogue!');
+    });
+}
 
 // API Routes
 app.use('/api/products', productRoutes);
